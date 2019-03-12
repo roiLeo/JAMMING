@@ -1,9 +1,20 @@
 <h1 align="center"> &middot; JAMstack &middot; </h1>
-<p align="center">Don't worry, just chill.</p>
 
-[![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
-
+<p align="center">
+  Don't worry, just chill.
+  <br>
+  <br>
+<a href="https://badge.fury.io/js/vuejs"><img src="https://badge.fury.io/js/vuejs.svg" alt="npm version" height="18"></a>
+  <a href="https://badge.fury.io/js/materialize-css">
+    <img src="https://badge.fury.io/js/materialize-css.svg" alt="npm version badge">
+  </a>
+  <a href="https://david-dm.org/roiLeo/JAMMING">
+    <img src="https://david-dm.org/roiLeo/JAMMING/status.svg" alt="dependencies Status badge">
+    </a>
+  <a href="https://david-dm.org/roiLeo/JAMMING#info=devDependencies">
+    <img src="https://david-dm.org/roiLeo/JAMMING/dev-status.svg" alt="devDependency Status badge">
+  </a>
+</p>
 
 ## Installing / Getting started
 #### Install Gridsome CLI tool if you don't have
@@ -18,10 +29,11 @@
 ## Developing
 
 ### Built With
-
+<p align="center">
 <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a>
 <a href="https://gridsome.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://gridsome.org/logos/logo-circle-normal.svg" alt="Gridsome logo"></a>
-<a href="https://bulma.io" target="_blank" rel="noopener noreferrer"><img width="100" src="https://bulma.io/images/bulma-icon.png"></a>                                                                                                                        
+<a href="https://bulma.io" target="_blank" rel="noopener noreferrer"><img width="100" src="https://bulma.io/images/bulma-icon.png"></a>
+</p>
                                                                                                                                   
 ### Prerequisites
 Node v8.0 or higher
