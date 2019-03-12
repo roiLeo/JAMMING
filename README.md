@@ -1,4 +1,4 @@
-# JAMstack &middot; 
+# &middot; JAMstack &middot; 
 [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
 
 Don't worry, just chill.
@@ -16,10 +16,11 @@ Don't worry, just chill.
 ## Developing
 
 ### Built With
+
 <a href="https://vuejs.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://vuejs.org/images/logo.png" alt="Vue logo"></a>
 <a href="https://gridsome.org" target="_blank" rel="noopener noreferrer"><img width="100" src="https://gridsome.org/logos/logo-circle-normal.svg" alt="Gridsome logo"></a>
-<a href="https://bulma.io" target="_blank" rel="noopener noreferrer"><img width="100" src="https://bulma.io/images/bulma-icon.png"></a>
-
+<a href="https://bulma.io" target="_blank" rel="noopener noreferrer"><img width="100" src="https://bulma.io/images/bulma-icon.png"></a>                                                                                                                        
+                                                                                                                                  
 ### Prerequisites
 Node v8.0 or higher
 NPM
