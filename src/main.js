@@ -3,8 +3,10 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 
-import "bulma/css/bulma.css"
-import "@fortawesome/fontawesome-free/css/all.css"
+import 'bulma/css/bulma.css'
+import '@fortawesome/fontawesome-free/css/all.css'
+
+import '~/assets/scss/main.scss'
 
 
 export default function (Vue, {router, head, isClient}) {

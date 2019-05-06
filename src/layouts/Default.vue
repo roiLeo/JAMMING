@@ -2,9 +2,7 @@
   <div>
 		<AppHeader></AppHeader>
 
-    <div class="container is-widescreen has-text-centered">
-        <slot/>
-    </div>
+    <slot/>
 
 		<AppFooter></AppFooter>
 

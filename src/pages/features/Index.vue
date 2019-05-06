@@ -18,6 +18,7 @@
             <div id="navbarMenuHeroA" class="navbar-menu">
               <div class="navbar-end">
                 <g-link class="navbar-item" :exact-active-class="'is-active'" :to="{ name: 'home'}">Home</g-link>
+                <g-link class="navbar-item" :exact-active-class="'is-active'" :to="{ name: 'list' }">List</g-link>
                 <g-link class="navbar-item" :exact-active-class="'is-active'" :to="{ name: 'exemples' }">Exemples</g-link>
                 <g-link class="navbar-item" :exact-active-class="'is-active'" :to="{ name: 'about' }">About</g-link>
                 <span class="navbar-item">

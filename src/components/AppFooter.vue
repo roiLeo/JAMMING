@@ -1,6 +1,6 @@
 <template>
-    <footer class="footer has-background-dark">
-      <div class="content has-text-grey-light has-text-centered">
+    <footer class="footer">
+      <div class="content has-text-centered">
         <p>
           Made with 🔥
         </p>
