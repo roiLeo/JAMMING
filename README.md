@@ -1,22 +1,6 @@
 <h1 align="center"> &middot; JAMstack &middot; </h1>
 
-<p align="center">
-  Don't worry, just chill.
-  <br>
-  <br>
-<a href="https://badge.fury.io/js/vuejs">
-  <img src="https://badge.fury.io/js/vuejs.svg" alt="npm version">
-  </a>
-  <a href="https://badge.fury.io/js/materialize-css">
-    <img src="https://badge.fury.io/js/materialize-css.svg" alt="npm version badge">
-  </a>
-  <a href="https://david-dm.org/roiLeo/JAMMING">
-    <img src="https://david-dm.org/roiLeo/JAMMING/status.svg" alt="dependencies Status badge">
-    </a>
-  <a href="https://david-dm.org/roiLeo/JAMMING#info=devDependencies">
-    <img src="https://david-dm.org/roiLeo/JAMMING/dev-status.svg" alt="devDependency Status badge">
-  </a>
-</p>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/554a8343-7379-4b92-8172-1b584d46ba73/deploy-status)](https://app.netlify.com/sites/skeuds/deploys)
 
 ## Installing / Getting started
 #### Install Gridsome CLI tool if you don't have
