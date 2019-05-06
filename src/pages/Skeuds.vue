@@ -30,15 +30,15 @@
 </template>
 
 <script>
-	import Pagination from '../components/Pagination';
-
-	const axios = require('axios')
+	import Pagination from '../components/Pagination'
+	import config from '../../config'
+	import axios from 'axios'
 
 	const request_token = {
 		url: 'https://api.discogs.com/oauth/request_token',
 		method: 'GET',
-		cKey: 'PcOTvXfoPpbhQTFTaCpv',
-		cSecret: 'YPBqixlnwZJtaZKcvYtgnIgWToGAhyUy'
+		cKey: config.consumer_key,
+		cSecret: config.consumer_secret
 	};
 
 	var getCookie = cname => {
@@ -69,7 +69,7 @@
 		data () {
 			return {
 				collection: {},
-				baseUrl: 'https://api.discogs.com/users/roiLeo/collection',
+				baseUrl: 'https://api.discogs.com/users/' + config.username + '/collection',
 				meta_data: {
 					lastPage: null,
 					currentPage: 1,
