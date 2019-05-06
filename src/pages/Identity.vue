@@ -43,14 +43,14 @@
 </template>
 
 <script>
-	import config from '../../config'
+	// import config from '../../config'
 	import axios from 'axios'
 
 	const request_token = {
 		url: 'https://api.discogs.com/oauth/request_token',
 		method: 'GET',
-		cKey: config.consumer_key,
-		cSecret: config.consumer_secret
+		cKey: process.env.GRIDSOME_CONSUMER_KEY,
+		cSecret: process.env.GRIDSOME_CONSUMER_SECRET
 	};
 
 	var getCookie = cname => {
@@ -81,7 +81,7 @@
 		},
 		mounted () {
 			axios({
-				url: 'https://api.discogs.com/users/'+ config.username +'/collection/value',
+				url: 'https://api.discogs.com/users/'+ process.env.GRIDSOME_API_USER +'/collection/value',
 				method: 'get',
 				params: {
 					'oauth_consumer_key': request_token.cKey,

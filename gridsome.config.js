@@ -5,9 +5,12 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Hell Yeah',
+  siteName: process.env.WEB_USER,
   siteUrl: '',
   siteDescription: 'THIS WEBSITE IS A TEST SITE',
+  // userName: process.env.API_USER,
+  consumerKey: process.env.CONSUMER_KEY,
+  consumerSecret: process.env.CONSUMER_SECRET,
   plugins: [
     {
       use: '@gridsome/source-faker',

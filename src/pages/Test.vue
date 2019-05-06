@@ -64,7 +64,7 @@
         },
         // mounted () {
         //     axios
-        //     .get('https://api.discogs.com/users/roiLeo/collection/value')
+        //     .get('https://api.discogs.com/users/roiLeo/+process.env.GRIDSOME_API_USER+/value')
         //          .then(response => (this.info = response))
         // }
         // mounted () {

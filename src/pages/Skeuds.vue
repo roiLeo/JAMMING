@@ -31,14 +31,14 @@
 
 <script>
 	import Pagination from '../components/Pagination'
-	import config from '../../config'
+	// import config from '../../config'
 	import axios from 'axios'
 
 	const request_token = {
 		url: 'https://api.discogs.com/oauth/request_token',
 		method: 'GET',
-		cKey: config.consumer_key,
-		cSecret: config.consumer_secret
+		cKey: process.env.GRIDSOME_CONSUMER_KEY,
+		cSecret: process.env.GRIDSOME_CONSUMER_SECRET
 	};
 
 	var getCookie = cname => {
@@ -69,7 +69,7 @@
 		data () {
 			return {
 				collection: {},
-				baseUrl: 'https://api.discogs.com/users/' + config.username + '/collection',
+				baseUrl: 'https://api.discogs.com/users/' + process.env.GRIDSOME_API_USER + '/collection',
 				meta_data: {
 					lastPage: null,
 					currentPage: 1,
