@@ -7,15 +7,15 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.7.2",
-    "@gridsome/source-faker": "^0.2.0",
-    "axios": "^0.18.0",
-    "bulma": "^0.7.4",
-    "gridsome": "^0.5.0",
-    "oauth-1.0a": "^2.2.5"
+    "@fortawesome/fontawesome-free": "^5.13.0",
+    "@gridsome/source-faker": "^0.3.0",
+    "axios": "^0.19.2",
+    "bulma": "^0.8.2",
+    "gridsome": "^0.7.14",
+    "oauth-1.0a": "^2.2.6"
   },
   "devDependencies": {
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0"
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2"
   }
 }
