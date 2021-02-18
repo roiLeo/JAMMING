@@ -41,7 +41,7 @@
             Title
           </h1>
           <h2 class="subtitle">
-            <g-link to="/">{{ $static.metaData.siteName }}</g-link>
+            <g-link to="/">HOME</g-link>
           </h2>
         </div>
       </div>

@@ -10,7 +10,15 @@
 </template>
 
 <script>
-    const axios = require('axios')
+	import config from '../../config'
+	import axios from 'axios'
+
+	const request_token = {
+		url: 'https://api.discogs.com/oauth/request_token',
+		method: 'GET',
+		cKey: config.consumer_key,
+		cSecret: config.consumer_secret
+	};
 
     var getQueryStringParams = query => {
         return query
@@ -27,10 +35,9 @@
 
     var getCookie = cname => {
         var name = cname + '=';
-        var decodedCookie = decodeURIComponent(document.cookie);
-        var ca = decodedCookie.split(';');
-        for(var i = 0; i <ca.length; i++) {
-            var c = ca[i];
+        var decodedCookie = typeof document !== 'undefined' && decodeURIComponent(document.cookie).split(';');
+        for(var i = 0; i <decodedCookie.length; i++) {
+            var c = decodedCookie[i];
             while (c.charAt(0) == ' ') {
                 c = c.substring(1);
             }
@@ -41,22 +48,17 @@
         return '';
     }
 
-    var oauth = getQueryStringParams(window.location.href.split('?')[1]);
+    var oauth = typeof window !== 'undefined' && getQueryStringParams(window.location.href.split('?')[1]);
     console.log(oauth)
-
-    const request_token = {
-      url: 'https://api.discogs.com/oauth/request_token',
-      method: 'GET',
-      cKey: 'PcOTvXfoPpbhQTFTaCpv',
-      cSecret: 'YPBqixlnwZJtaZKcvYtgnIgWToGAhyUy'
-    };
+	if (oauth) {
+		oauth.oauth_token_secret = getCookie('oauth_token_secret');
+	}
 
     const access_token = {
         url: 'https://api.discogs.com/oauth/access_token',
         method: 'POST',
     };
 
-    oauth.oauth_token_secret = getCookie('oauth_token_secret');
 
     axios({
         url: access_token.url,
@@ -75,7 +77,9 @@
         var token = getQueryStringParams(response.data)
         console.log(token)
 
-        document.cookie = response.data;
+		if (typeof document !== 'undefined') {
+			document.cookie = response.data;
+		}
 
     }).catch((error) => {
         console.log(error);

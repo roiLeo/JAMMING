@@ -29,9 +29,9 @@
 							</div>
 						</div>
 						<footer class="card-footer">
-							<a href="#" class="card-footer-item">{{ collection.minimum }}</a>
-							<a href="#" class="card-footer-item">{{ collection.median }}</a>
-							<a href="#" class="card-footer-item">{{ collection.maximum }}</a>
+							<!-- <a href="#" class="card-footer-item">{{ collection.minimum || 0 }}</a>
+							<a href="#" class="card-footer-item">{{ collection.median || 0}}</a>
+							<a href="#" class="card-footer-item">{{ collection.maximum || 0}}</a> -->
 						</footer>
 					</div>
 
@@ -43,14 +43,16 @@
 </template>
 
 <script>
-	const axios = require('axios')
+	import config from '../../config'
+	import axios from 'axios'
 
 	const request_token = {
 		url: 'https://api.discogs.com/oauth/request_token',
 		method: 'GET',
-		cKey: 'PcOTvXfoPpbhQTFTaCpv',
-		cSecret: 'YPBqixlnwZJtaZKcvYtgnIgWToGAhyUy'
+		cKey: config.consumer_key,
+		cSecret: config.consumer_secret
 	};
+
 
 	var getCookie = cname => {
 		var name = cname + '=';
